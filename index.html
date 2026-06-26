@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected by YMAL.space</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+        }
+        
+        .ymal-banner {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 0 0 12px 12px;
+            padding: 10px 24px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            max-width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .ymal-banner:hover {
+            border-color: rgba(0, 212, 255, 0.6);
+            box-shadow: 0 4px 25px rgba(0, 212, 255, 0.15);
+        }
+        
+        .shield-icon {
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+        }
+        
+        .banner-text {
+            color: #b0b0b0;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            white-space: nowrap;
+        }
+        
+        .banner-brand {
+            background: linear-gradient(90deg, #00d4ff, #7b2ff7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        .banner-brand:hover {
+            background: linear-gradient(90deg, #33ddff, #9b4fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .verified-badge {
+            background: rgba(0, 212, 255, 0.15);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 12px;
+            padding: 3px 10px;
+            font-size: 11px;
+            color: #00d4ff;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        
+        @media (max-width: 480px) {
+            .ymal-banner {
+                padding: 8px 16px;
+                gap: 6px;
+                border-radius: 0 0 8px 8px;
+            }
+            .banner-text {
+                font-size: 11px;
+            }
+            .banner-brand {
+                font-size: 12px;
+            }
+            .verified-badge {
+                font-size: 10px;
+                padding: 2px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ymal-banner">
+        <!-- Shield Icon -->
+        <svg class="shield-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#7b2ff7;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <path d="M12 2L3 7V12C3 16.4183 6.58172 20 11 21C15.4183 20 19 16.4183 19 12V7L12 2Z" 
+                  fill="url(#shieldGrad)" opacity="0.9"/>
+            <path d="M9 12L11 14L15 10" stroke="#1a1a2e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        
+        <!-- Text -->
+        <span class="banner-text">This website is protected by</span>
+        
+        <!-- Brand -->
+        <a href="https://github.com/YOUR_USERNAME/ymalbanner" target="_blank" class="banner-brand">
+            YMAL.space
+        </a>
+        
+        <!-- Verified Badge -->
+        <span class="verified-badge">✓ VERIFIED</span>
+    </div>
+</body>
+</html>
