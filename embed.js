@@ -17,4 +17,4 @@
 </style>
 
 <!-- Add right after <body> -->
-<iframe src="https://YOUR_USERNAME.github.io/ymalbanner/" class="ymal-protection-banner"></iframe>
+<iframe src="https://max-yt2025.github.io/portected-by-ymal-banner/" class="ymal-protection-banner"></iframe>
